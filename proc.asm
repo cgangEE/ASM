@@ -9,7 +9,7 @@ array byte 40 DUP(?)
 printNum PROC
 	mov eax, [esp+4]
 	lea edi, array
-	whileloop: 
+	whileloop:
 		cmp eax, 0
 		jz endloop
 		mov edx, 0

@@ -2,12 +2,13 @@
 .686
 .stack
 .data
-EXTERN printNum: far
+EXTERN printNum: far16
 .code
 start:
-	mov eax, 132
+	mov eax, 'A'
+	
 	push eax
-	call printNum 
+	call printNum
 	add esp, 4
 	
 	mov eax, 4c00h
